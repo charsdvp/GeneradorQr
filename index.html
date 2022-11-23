@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./assets/qr-scan.png" type="image/x-icon">
+	<!--STYLE-->
+	<link rel="stylesheet" href="./css/style.css">
+	<!--Puedes descargar el script e incluirlo de manera local si así prefieres-->
+	<script src="https://unpkg.com/qrious@4.0.2/dist/qrious.js"></script>
+	<title>Generador de códigos QR</title>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <h1 class="title">Generador de Qr</h1>
+      <div class="container__url">
+        <label for="url">Ingresa la URL o el Texto deseado.</label>
+        <input type="text" name="url" id="input__URL" placeholder="URL...?" autocomplete="off">
+        <input type="submit" id="generar" value="Generar">
+      </div>
+      <img alt="Codigo Qr" id="codigo">
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer__container">
+      <ul class="container__list">
+        <li class="list__item">
+          <a href="https://www.facebook.com/profile.php?id=100087881793975" target="_blank" class="item">Facebook</a>
+        </li>
+        <li class="list__item">
+          <a href="https://www.instagram.com/chars_dvp/" target="_blank" class="item">Instagram</a>
+        </li>
+        <li class="list__item">
+          <a href="https://twitter.com/charsdvp" target="_blank" class="item">Twitter</a>
+        </li>
+      </ul>
+      <span class="footer__text">&COPY;Carlos Sánchez & Error 420</span>
+    </div>
+	</div>
+  <script src="./js/app.js"></script>
+</body>
+</html>
