@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,16 +11,18 @@ body {
 .header {
   width: 100vw;
   height: 100vh;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-.container {
-  min-height: 400px;
+.header__container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-.title {
+.header__title {
   padding-top: 20px;
 }
 .container__url {
@@ -62,7 +64,7 @@ input[type="submit"] {
   padding: 4px;
   display: block;
 }
-input[type="submit"]:hover {
+input[type="submit"]:hover, input[type="submit"]:active{
   box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(234, 33, 241, 0.885);
   background-color: rgba(255, 0, 179, 0.597);
   border: 1px solid rgba(255, 0, 179, 0.774);
@@ -72,11 +74,9 @@ input[type="submit"]:hover {
 }
 .footer{
   width: 100%;
-  min-height: 80px;
+  height: 80px;
   color: aliceblue;
   background-color: #222;
-  bottom: 0;
-  position: absolute;
 }
 .container__list{
   width: 100%;
@@ -96,8 +96,8 @@ input[type="submit"]:hover {
   color: aliceblue;
 }
 .footer__container{
+  height: 100%;
   width: 100%;
-  min-height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
