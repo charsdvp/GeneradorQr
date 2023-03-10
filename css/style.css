@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: .3s all ease;
 }
 body {
   color: aliceblue;
-  background-color: #111;
-  font-family: "Courier New", Courier, monospace;
+  background-color: #0f0e17;
+  font-family: 'Quicksand', sans-serif;
 }
 .header {
   width: 100vw;
@@ -43,7 +45,7 @@ input[type="text"] {
   padding: 8px;
   color: aliceblue;
   border: 1px solid aliceblue;
-  background-color: #111;
+  background-color: #0f0e17;
   border-radius: 6px;
   outline-color: rgba(255, 0, 179, 0.774);
 }
@@ -58,7 +60,7 @@ input[type="submit"] {
   border-radius: 6px;
   color: aliceblue;
   border: 1px solid #333;
-  background-color: #222;
+  background-color: #0f0e17;
   width: 150px;
   margin: 30px 0;
   padding: 4px;
@@ -72,11 +74,26 @@ input[type="submit"]:hover, input[type="submit"]:active{
 #codigo {
   display: none;
 }
+.container__Qr{
+  display: none;
+  text-align: center;
+}
+.btn__copy{
+  margin-top: 15px;
+  padding: 10px;
+  color: aliceblue;
+  background: none;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0;
+}
+.btn__copy:hover, .btn__copy:active{
+  color: rgba(255, 0, 179, 0.774);
+}
 .footer{
   width: 100%;
   height: 80px;
   color: aliceblue;
-  background-color: #222;
 }
 .container__list{
   width: 100%;
@@ -93,7 +110,7 @@ input[type="submit"]:hover, input[type="submit"]:active{
   transition: all .3s;
 }
 .item:hover{
-  color: aliceblue;
+  color:rgba(255, 0, 179, 0.774);
 }
 .footer__container{
   height: 100%;
