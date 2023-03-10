@@ -2,4 +2,4 @@
 
 Puedes probarlos [Aquí](https://charsdvp.github.io/GeneradorQr/)
 
-![Vista de la web](./assets/web2.png)
+![Vista de la web](../assets/web2.png)
